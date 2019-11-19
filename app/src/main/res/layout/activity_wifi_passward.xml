@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiPassward">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter WiFi Details"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/etWifiName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/wifipass"
+        android:ems="10"
+        android:hint="  WiFi Name"
+        android:layout_above="@+id/etWifiPassword"
+        />
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:id="@+id/etWifiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/lockc"
+        android:ems="10"
+        android:hint="  Enter Password"
+        android:layout_centerInParent="true"
+         />
+    <Button
+        android:layout_below="@+id/etWifiPassword"
+        android:id="@+id/btnConnect"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Connect"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        />
+
+</RelativeLayout>

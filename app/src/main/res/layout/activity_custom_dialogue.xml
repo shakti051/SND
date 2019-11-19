@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadowdialogue"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    tools:context=".Custom_dialogue">
+
+<ImageView
+    android:visibility="invisible"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/progressbarlogo"
+    android:layout_marginTop="32dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/progressBarLogo"
+    />
+
+<ProgressBar
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="32dp"
+    android:layout_centerHorizontal="true"
+    android:indeterminateTint="@color/grey"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wailt calling API...."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/progressBarLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tvCallingApi"
+        />
+
+    <TextView
+        android:id="@+id/tvClickme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me! Pairing Your Device"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvCallingApi"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="204dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

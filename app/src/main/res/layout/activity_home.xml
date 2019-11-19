@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp" android:background="@color/colorPrimary"
+    android:id="@+id/dashboard"
+    >
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:layout_centerVertical="true"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/logout"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        />
+
+</RelativeLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent" android:background="@color/white" android:layout_below="@+id/dashboard"
+        android:layout_height="160dp" android:elevation="0dp" android:id="@+id/appbarid">
+        <RelativeLayout
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/ivConnected"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/connected"
+                />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Home"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/ivConnected"
+                android:id="@+id/tvWelcome"
+                />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9098876543"
+                android:textSize="14sp"
+                android:layout_below="@+id/tvWelcome"
+                android:layout_toEndOf="@id/ivConnected"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnAddDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" + Add Device  "
+            android:layout_gravity="right"
+            android:textAllCaps="false"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/roundedbutton"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent" android:layout_below="@+id/appbarid"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/black"
+        android:id="@+id/tablayout_id"
+        ></com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent" android:layout_below="@id/tablayout_id"
+        android:layout_height="wrap_content" android:id="@+id/viewpager_id">
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

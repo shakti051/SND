@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Unpair_Dialogue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UNPAIR CIT0001"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:id="@+id/tvUnpair"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:text="Do You want unpair the device CIT0001 ?"
+        android:layout_below="@+id/tvUnpair"
+        android:id="@+id/tvUnpaircit"
+        />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUnpaircit"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Cancel"
+            android:background="@drawable/roundedbutton"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_width="wrap_content" android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:text="Ok"
+            android:layout_marginBottom="50dp"
+            android:textSize="20sp"
+            android:background="@drawable/roundedbutton"
+            android:layout_width="wrap_content" android:layout_weight="1"
+            android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

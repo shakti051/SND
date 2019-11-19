@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="5dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivDeviceLinking"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/device_linking"
+            />
+
+        <TextView
+            android:id="@+id/tvDeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CIT0001"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/ivDeviceLinking"
+            />
+
+
+        <TextView
+            android:id="@+id/tvDeviceLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Living Room"
+            android:textSize="14sp"
+            android:layout_below="@+id/tvDeviceName"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/ivDeviceLinking"
+            />
+
+        <ImageView
+            android:id="@+id/ivGreenCircle"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/redcircle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            />
+
+        <Button
+            android:id="@+id/btnPush"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundedbutton"
+            android:layout_toLeftOf="@id/ivGreenCircle"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:textSize="13sp"
+            android:text=" PUSH"
+            />
+        <Button
+            android:id="@+id/btnUnpair"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundedbutton"
+            android:layout_toLeftOf="@id/btnPush"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:textSize="13sp"
+            android:text=" UNPAIR "
+            />
+        <Button
+            android:id="@+id/btnpair"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundedbutton"
+            android:layout_toLeftOf="@id/btnPush"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:textSize="13sp"
+            android:text=" PAIR "
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

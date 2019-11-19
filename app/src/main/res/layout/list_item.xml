@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/label"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:textSize="16dip"
+    android:textStyle="bold"
+    android:textColor="@android:color/holo_blue_dark">
+</TextView>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="5dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivWifiLogo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/wifilogo"
+                    />
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC12334"
+                    android:layout_toEndOf="@+id/ivWifiLogo"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    />
+
+                <Button
+                    android:id="@+id/btnPairDevice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text=" Pair Device "
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:background="@drawable/roundedbutton"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    -->

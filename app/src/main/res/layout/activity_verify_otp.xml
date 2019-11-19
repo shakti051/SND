@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyOTP">
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification Code sent to your registered "
+        android:textSize="16dp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tvVerify"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mobile no 929891XXXX"
+        android:layout_below="@id/tvVerify"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvMobNo"
+        />
+
+    <LinearLayout
+        android:id="@+id/otpLinear"
+        android:layout_width="match_parent" android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMobNo"
+    >
+        <EditText
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text=""
+            android:gravity="center"
+            android:id="@+id/etFst"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            />
+
+        <EditText
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text=""
+            android:gravity="center"
+            android:id="@+id/etSec"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            />
+
+        <EditText
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text=""
+            android:gravity="center"
+            android:id="@+id/etThir"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            />
+
+        <EditText
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text=""
+            android:gravity="center"
+            android:id="@+id/etForth"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            />
+
+    </LinearLayout>
+
+        <Button
+        android:layout_below="@id/otpLinear"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:id="@+id/btnVerifyotp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:background="@drawable/roundedbutton"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

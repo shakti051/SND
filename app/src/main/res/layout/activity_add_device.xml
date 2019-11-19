@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDevice">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select a Device to Add"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/tvSelectDevice"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/tvSelectDevice"
+        android:id="@+id/linerAddActivity"
+        android:layout_width="match_parent" android:background="@color/lightGray"
+        android:layout_height="5dp">
+    </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/lightGray"
+            android:layout_below="@id/linerAddActivity"
+            android:layout_width="match_parent" android:id="@+id/addDevice_Recyclerview"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

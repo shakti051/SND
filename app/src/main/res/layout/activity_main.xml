@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="32dp"
+    android:background="@drawable/shadowregister"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="15:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/logo3"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Connected With Smart Devices"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/roundedbutton"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvLoginExis"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tvLoginExis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login With Existing Account: "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    <!--
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:background="@drawable/sndlogo"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="64dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_marginTop="64dp"
+            android:id="@+id/tvGetConnected"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Connected with smart devices."
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Register"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:background="@drawable/roundedbutton"
+            android:layout_above="@+id/tvLoginExis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tvLoginExis"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with existing account"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="64dp"
+            />
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
